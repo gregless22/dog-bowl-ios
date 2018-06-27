@@ -76,6 +76,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F40C5A9A20E3142000C86EE9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F4B1BC6C20D4A84A009F80CE /* Assets.xcassets */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F40C5A9B20E3142800C86EE9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4B1BC6220D4A849009F80CE /* AppDelegate.swift */,
+				F4B1BC6420D4A849009F80CE /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F40C5A9C20E3142E00C86EE9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F4B1BC6620D4A849009F80CE /* Main.storyboard */,
+				F4B1BC6E20D4A84A009F80CE /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		F4B1BC5620D4A849009F80CE = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +125,9 @@
 		F4B1BC6120D4A849009F80CE /* dog-bowl */ = {
 			isa = PBXGroup;
 			children = (
-				F4B1BC6220D4A849009F80CE /* AppDelegate.swift */,
-				F4B1BC6420D4A849009F80CE /* ViewController.swift */,
-				F4B1BC6620D4A849009F80CE /* Main.storyboard */,
-				F4B1BC6C20D4A84A009F80CE /* Assets.xcassets */,
-				F4B1BC6E20D4A84A009F80CE /* LaunchScreen.storyboard */,
+				F40C5A9C20E3142E00C86EE9 /* view */,
+				F40C5A9B20E3142800C86EE9 /* controller */,
+				F40C5A9A20E3142000C86EE9 /* model */,
 				F4B1BC7120D4A84A009F80CE /* Info.plist */,
 				F4B1BC6920D4A849009F80CE /* dog_bowl.xcdatamodeld */,
 			);
