@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BC337FB20E48F860053C16A /* DogBowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FA20E48F860053C16A /* DogBowl.swift */; };
+		9BC337FC20E48F860053C16A /* DogBowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FA20E48F860053C16A /* DogBowl.swift */; };
+		9BC337FD20E48F860053C16A /* DogBowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FA20E48F860053C16A /* DogBowl.swift */; };
+		9BC337FF20E48FA40053C16A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FE20E48FA40053C16A /* Model.swift */; };
+		9BC3380020E48FA40053C16A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FE20E48FA40053C16A /* Model.swift */; };
+		9BC3380120E48FA40053C16A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FE20E48FA40053C16A /* Model.swift */; };
+		9BC3380320E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
+		9BC3380420E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
+		9BC3380520E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
 		F4B1BC6320D4A849009F80CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1BC6220D4A849009F80CE /* AppDelegate.swift */; };
 		F4B1BC6520D4A849009F80CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1BC6420D4A849009F80CE /* ViewController.swift */; };
 		F4B1BC6820D4A849009F80CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B1BC6620D4A849009F80CE /* Main.storyboard */; };
@@ -35,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9BC337FA20E48F860053C16A /* DogBowl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBowl.swift; sourceTree = "<group>"; };
+		9BC337FE20E48FA40053C16A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9BC3380220E48FC70053C16A /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
 		F4B1BC5F20D4A849009F80CE /* dog-bowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dog-bowl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B1BC6220D4A849009F80CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B1BC6420D4A849009F80CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				F4B1BC6C20D4A84A009F80CE /* Assets.xcassets */,
+				9BC337FA20E48F860053C16A /* DogBowl.swift */,
+				9BC337FE20E48FA40053C16A /* Model.swift */,
+				9BC3380220E48FC70053C16A /* Establishment.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -283,7 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC337FF20E48FA40053C16A /* Model.swift in Sources */,
+				9BC337FB20E48F860053C16A /* DogBowl.swift in Sources */,
 				F4B1BC6520D4A849009F80CE /* ViewController.swift in Sources */,
+				9BC3380320E48FC70053C16A /* Establishment.swift in Sources */,
 				F4B1BC6320D4A849009F80CE /* AppDelegate.swift in Sources */,
 				F4B1BC6B20D4A849009F80CE /* dog_bowl.xcdatamodeld in Sources */,
 			);
@@ -293,7 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC3380020E48FA40053C16A /* Model.swift in Sources */,
+				9BC3380420E48FC70053C16A /* Establishment.swift in Sources */,
 				F4B1BC7B20D4A84A009F80CE /* dog_bowlTests.swift in Sources */,
+				9BC337FC20E48F860053C16A /* DogBowl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC3380120E48FA40053C16A /* Model.swift in Sources */,
+				9BC3380520E48FC70053C16A /* Establishment.swift in Sources */,
 				F4B1BC8620D4A84A009F80CE /* dog_bowlUITests.swift in Sources */,
+				9BC337FD20E48F860053C16A /* DogBowl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
