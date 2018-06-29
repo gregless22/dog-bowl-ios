@@ -11,9 +11,16 @@
 import Foundation
 
 
-//singleton for creation of one instance of MyModel
+
 class Model {
+	
+	//singleton for creation of one instance of MyModel
 	static let myModel = Model()
+	
+	//variables (not sure if this is the correct implementation)
+	var myDogBowls:[DogBowl]
+	
+	
 }
 
 
