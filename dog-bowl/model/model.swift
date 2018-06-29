@@ -9,3 +9,14 @@
 //
 
 import Foundation
+
+
+//singleton for creation of one instance of MyModel
+class Model {
+	static let myModel = Model()
+}
+
+
+// add attributes to myModel such as array of dog bowls, map instance, user information.
+
+
