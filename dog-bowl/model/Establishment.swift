@@ -19,7 +19,7 @@ struct Establishment {
 	var type:EstablishmentType
 	var vicinity:String
 	
-	// initialiser
+	// initialiser if it is not in the google database,
 	init(location:CLLocationCoordinate2D, description:String, type:EstablishmentType, vicinity:String) {
 		self.location = location
 		self.description = description
@@ -28,10 +28,9 @@ struct Establishment {
 	}
 	
 	// initialiser for data from the google database.
-	
-	init(placeID:String) {
+	init(_ placeID:String) {
 		
-		//complete the API call.
+		//complete the API call and all of this data should be returned.
 		self.location = CLLocationCoordinate2D(latitude: -26.667067, longitude: 153.106091)
 		self.description = "Hathi Indian Restaurant"
 		self.type = EstablishmentType.other
