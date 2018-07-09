@@ -52,10 +52,10 @@ enum MockData {
 	var photos: String {
 		get {
 			switch self {
-			case .iga: return ""
-			case .cottonTreePark: return ""
-			case .alexandraParade: return ""
-			case .skatePark: return ""
+			case .iga: return "iga"
+			case .cottonTreePark: return "cottonTreePark"
+			case .alexandraParade: return "alexandrParade"
+			case .skatePark: return "skatePark"
 			}
 		}
 	}
