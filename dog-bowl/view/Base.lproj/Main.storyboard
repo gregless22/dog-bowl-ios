@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="-991" y="329"/>
         </scene>
-        <!--Map View-->
+        <!--MapController-->
         <scene sceneID="rLP-H1-gKl">
             <objects>
-                <viewController storyboardIdentifier="map-view" id="mr6-Gj-5fu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="map-view" title="MapController" id="mr6-Gj-5fu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Uz-NF-N31">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
