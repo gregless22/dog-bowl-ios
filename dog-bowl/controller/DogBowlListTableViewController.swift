@@ -48,8 +48,10 @@ class DogBowlListTableViewController: UITableViewController {
 		let dogBowl:DogBowl = dogBowlList[indexPath.item]
 		
       // Configure the cell...
-		cell.textLabel!.text = dogBowl.establishment.description
-		cell.detailTextLabel!.text = dogBowl.photo
+		
+		
+		cell.masterImage!.image = UIImage(named: dogBowl.photo)
+		//cell.detailTextLabel!.text = dogBowl.photo
 		
 		
         return cell
