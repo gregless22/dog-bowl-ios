@@ -42,7 +42,14 @@ struct Establishment {
 	//this will be the call to the google API.
 	
 	
+	// for manual creating of the establishment
 	
+	init(_ location:CLLocationCoordinate2D,_ description:String,_ type:EstablishmentType) {
+		self.location = location
+		self.description = description
+		self.type = type
+		self.vicinity = "shop 15/140 Alexandra Parade, Alexandra Headland"
+	}
 	
 	
 	
@@ -57,24 +64,6 @@ struct Establishment {
 	
 	
 	
-	
-	// functions for retrieveal of information (is this better as one call and returning a tuple??)
-	// get location
-	func getLocation() -> CLLocationCoordinate2D {
-		return location
-	}
-	
-	func getDescription() -> String {
-		return description
-	}
-	
-	func getType() -> String {
-		return type.name
-	}
-	
-	func getVicinity() -> String {
-		return vicinity
-	}
 	
 	//functions for updating data upon user request
 	//the only thing that may change here is the bowl type.  All of the other data is retrieved from google database.
@@ -103,13 +92,15 @@ enum EstablishmentType:String {
 	var color: UIColor {
 		get {
 			switch self {
-				case .restaurant: return UIColor(red: 228, green: 205, blue: 254, alpha: 1)
-				case .cafe:return UIColor(red: 162, green: 216, blue: 218, alpha: 1)
-				case .park: return UIColor(red: 249, green: 187, blue: 157, alpha: 1)
-				case .other: return UIColor(red: 139, green: 215, blue: 253, alpha: 1)
-				case .unknown: return UIColor(red: 47, green: 45, blue: 46, alpha: 1)
+				case .restaurant: return UIColor(red: 228/255, green: 205/255, blue: 254/255, alpha: 1)
+				case .cafe:return UIColor(red: 162/255, green: 216/255, blue: 218/255, alpha: 1)
+				case .park: return UIColor(red: 249/255, green: 187/255, blue: 157/255, alpha: 1)
+				case .other: return UIColor(red: 139/255, green: 215/255, blue: 253/255, alpha: 1)
+				case .unknown: return UIColor(red: 47/255, green: 45/255, blue: 46/255, alpha: 1)
 			}
 		}
 	}
+	
+	
 
 }

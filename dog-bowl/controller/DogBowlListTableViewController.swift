@@ -8,11 +8,12 @@
 
 import UIKit
 
+
 class DogBowlListCell: UITableViewCell {
 	@IBOutlet weak var imageCustom: UIImageView!
 	@IBOutlet weak var headingCustom: UILabel!
-	@IBOutlet weak var ratingCustom: UIView!
-	@IBOutlet weak var typeCustom: UIView!
+	@IBOutlet weak var cosmosCustom: CosmosView!
+	@IBOutlet weak var typeCustom: UILabel!
 	@IBOutlet weak var distanceCustom: UILabel!
 
 
@@ -62,9 +63,11 @@ class DogBowlListTableViewController: UITableViewController {
 		
 		
 		cell.imageCustom!.image = UIImage(named: dogBowl.photo)
-		cell.headingCustom!.text = dogBowl.establishment.description
-		//cell.ratingCustom! = UIImage(named: dogBowl.rating)
-		//cell.typeCustom! = UIImage(named: dogBowl.rating)
+		cell.headingCustom!.text = dogBowl.description
+		cell.cosmosCustom.rating = dogBowl.rating
+		cell.cosmosCustom.text = "\(dogBowl.rating)"
+		cell.typeCustom!.text = dogBowl.establishment.type.name
+		cell.typeCustom!.backgroundColor = dogBowl.establishment.type.color
 		cell.distanceCustom!.text = "Distance: 100m" // need to create function for distance calculation.
 		
         return cell

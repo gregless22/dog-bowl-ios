@@ -16,6 +16,7 @@ struct DogBowl {
 	let establishment:Establishment
 	let photo: String
 	let rating: Double
+	let description: String
 	
 	
 	//create an instance of the mockdata.
@@ -25,14 +26,20 @@ struct DogBowl {
 	//this init is for creating a finished dog bowl.
 	init?(builder: DogBowlBuilder) {
 		
-		if let establishment = builder.establishment,	let photo = builder.photo, let rating = builder.rating {
-			self.establishment = establishment
-			self.photo = photo
-			self.rating = rating
-		}
-		else {
-			return nil
-		}
+		if let establishment = builder.establishment,
+			let photo = builder.photo,
+			let rating = builder.rating,
+			let description = builder.description {
+			
+				self.establishment = establishment
+				self.photo = photo
+				self.rating = rating
+				self.description = description
+			}
+			
+			else {
+				return nil
+			}
 	}
 	
 	//function to return dogbowls.  This will also instantiate the required instances.
@@ -49,7 +56,15 @@ struct DogBowl {
 			
 			//populate the builder with data
 			partialBowl.withPhoto(mockDatam[i].photos)
-			partialBowl.withEstablishment(mockDatam[i].placeID)
+			if mockDatam[i].placeID != "" {
+				partialBowl.withEstablishment(mockDatam[i].placeID)
+			}
+			else {
+				partialBowl.withEstablishment(mockDatam[i].locations, mockDatam[i].description, mockDatam[i].types)
+			}
+			
+			partialBowl.withRating(mockDatam[i].ratings)
+			partialBowl.withDescription(mockDatam[i].description)
 			
 			// add the finished complete bowl to the dogBowls array for return
 			dogBowls.append(partialBowl.build())
@@ -71,6 +86,7 @@ class DogBowlBuilder {
 	var establishment:Establishment?
 	var photo: String?
 	var rating: Double?
+	var description: String?
 	
 	//initialisation
 	init() {
@@ -81,13 +97,24 @@ class DogBowlBuilder {
 		self.establishment = Establishment(placeID)
 	}
 	
+	func withEstablishment(_ location:CLLocationCoordinate2D,_ description:String,_ type:EstablishmentType) {
+		self.establishment = Establishment(location, description, type)
+	}
+	
+	func withDescription(_ description:String) {
+		self.description = description
+	}
+	
 	func withPhoto(_ photo:String) {
 		self.photo = photo
 	}
 	
+	func withRating(_ rating:Double){
+		self.rating = rating
+	}
+	
 	//function init a dog bowl.
 	func build() -> DogBowl {
-		rating = 0
 		return DogBowl(builder: self)!
 	}
 	
@@ -115,6 +142,7 @@ enum MockData : String {
 			case .cottonTreePark: return "cottonTreePark"
 			case .alexandraParade: return "alexandraParade"
 			case .skatePark: return "skatePark"
+			default: return ""
 			}
 		}
 	}
@@ -125,6 +153,7 @@ enum MockData : String {
 			case .cottonTreePark: return "Cotton Tree Park"
 			case .alexandraParade: return "Cotton Tree Beach Park"
 			case .skatePark: return "Alex Skate Park"
+			case .iga: return "IGA Maroochydore"
 			default: return ""
 			}
 		}
@@ -163,11 +192,22 @@ enum MockData : String {
 		}
 	}
 	
+	var ratings: Double {
+		get {
+			switch self {
+				case .iga: return 2.8
+				case .cottonTreePark: return 3.2
+				case .alexandraParade: return 4
+				case .skatePark: return 3.5
+			}
+		}
+	}
+	
 	static func getAll() -> [MockData] {
 		return [.iga, .cottonTreePark, .alexandraParade, .skatePark]
 	}
 	
-}
+} //end bracket
 
 
 
