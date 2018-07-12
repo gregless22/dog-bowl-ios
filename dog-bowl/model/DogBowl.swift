@@ -19,7 +19,8 @@ struct DogBowl {
 	
 	
 	//create an instance of the mockdata.
-	var mockDatam: [MockData] = MockData.getAll()
+	static var mockDatam: [MockData] = MockData.getAll()
+	
 	
 	//this init is for creating a finished dog bowl.
 	init?(builder: DogBowlBuilder) {
@@ -35,7 +36,7 @@ struct DogBowl {
 	}
 	
 	//function to return dogbowls.  This will also instantiate the required instances.
-	func getBowls(howMany:Int, location:CLLocationCoordinate2D, filter:(String)?) -> [DogBowl] {
+	static func getBowls(_ howMany:Int,_ location:CLLocationCoordinate2D,_ filter:(String)?) -> [DogBowl] {
 		
 		//create return variable
 		var dogBowls:[DogBowl] = []
@@ -80,13 +81,90 @@ class DogBowlBuilder {
 		self.photo = photo
 	}
 	
-	
+	//function init a dog bowl.
 	func build() -> DogBowl {
 		rating = 0
 		return DogBowl(builder: self)!
 	}
 	
 }
+
+
+// mock data required for assignment 2
+// this would eventually be replaced by database data
+enum MockData : String {
+	case iga, cottonTreePark, alexandraParade, skatePark
+	
+	var placeID: String {
+		get {
+			switch self {
+			case .iga: return "178bc8613e5a1d14f42dbe7e4604eb980d39faa5"
+			default: return ""
+			}
+		}
+	}
+	
+	var photos: String {
+		get {
+			switch self {
+			case .iga: return "iga"
+			case .cottonTreePark: return "cottonTreePark"
+			case .alexandraParade: return "alexandrParade"
+			case .skatePark: return "skatePark"
+			}
+		}
+	}
+	
+	var description: String {
+		get {
+			switch self {
+			case .cottonTreePark: return "Cotton Tree Park"
+			case .alexandraParade: return "Cotton Tree Beach Park"
+			case .skatePark: return "Alex Skate Park"
+			default: return ""
+			}
+		}
+	}
+	
+	var vicinity: String {
+		get {
+			switch self {
+			case .cottonTreePark: return ""
+			case .alexandraParade: return ""
+			case .skatePark: return ""
+			default: return ""
+			}
+		}
+	}
+	
+	var types: EstablishmentType {
+		get {
+			switch self {
+			case .iga: return .other
+			case .cottonTreePark: return .park
+			case .alexandraParade: return .park
+			case .skatePark: return .park
+			}
+		}
+	}
+	
+	var locations: CLLocationCoordinate2D {
+		get {
+			switch self {
+			case .iga: return CLLocationCoordinate2D(latitude: -26.6629838, longitude: 153.0929365)
+			case .cottonTreePark: return CLLocationCoordinate2D(latitude: -26.654553, longitude: 153.096495)
+			case .alexandraParade: return CLLocationCoordinate2D(latitude: -26.653248, longitude: 153.102557)
+			case .skatePark: return CLLocationCoordinate2D(latitude: -26.667715, longitude: 153.107124)
+			}
+		}
+	}
+	
+	static func getAll() -> [MockData] {
+		return [.iga, .cottonTreePark, .alexandraParade, .skatePark]
+	}
+	
+}
+
 
 
 
