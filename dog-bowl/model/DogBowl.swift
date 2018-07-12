@@ -53,7 +53,11 @@ struct DogBowl {
 			
 			// add the finished complete bowl to the dogBowls array for return
 			dogBowls.append(partialBowl.build())
+			
+			//arrange the dog bowls in order of distance from user location before returning
+			//
 		}
+		
 		return dogBowls
 	}
 }

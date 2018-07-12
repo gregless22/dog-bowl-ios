@@ -16,21 +16,24 @@ class Model {
 	
 	//singleton for creation of one instance of MyModel
 	static let myModel = Model()
+	
+	//container to hold the dog bowls.
+	var myDogBowls:[DogBowl]
+	
 	private init(){
 		
 		//create users position.  This is more mock data and probably needs to be moved to the map controller.
 		let userLocation = CLLocationCoordinate2D(latitude: -26.657669, longitude: 153.102056)
 		
-		//container to hold the dog bowls.
-		var myDogBowls:[DogBowl]
-		
 		//populate the dog bowls array
-		myDogBowls = DogBowl.getBowls(4, userLocation, "no filter")
+		myDogBowls = DogBowl.getBowls(3, userLocation, "no filter")
 		
 		
 	}
 	
-	
+	func getDogBowls() -> [DogBowl] {
+		return myDogBowls
+	}
 	
 	
 	
