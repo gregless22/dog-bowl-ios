@@ -62,7 +62,8 @@ class DogBowlListTableViewController: UITableViewController {
 		
 		
 		cell.imageCustom!.image = UIImage(named: dogBowl.photo)
-		//cell.headingCustom!.text = dogBowl.establishment.description
+		cell.headingCustom!.text = dogBowl.establishment.description
+		cell.ratingCustom!.image = UIImage(named: dogBowl.rating)
 		
 		
         return cell
