@@ -113,7 +113,7 @@ enum MockData : String {
 			switch self {
 			case .iga: return "iga"
 			case .cottonTreePark: return "cottonTreePark"
-			case .alexandraParade: return "alexandrParade"
+			case .alexandraParade: return "alexandraParade"
 			case .skatePark: return "skatePark"
 			}
 		}

@@ -8,7 +8,18 @@
 
 import UIKit
 
+class DogBowlListCell: UITableViewCell {
+	@IBOutlet weak var imageCustom: UIImageView!
+	@IBOutlet weak var headingCustom: UILabel!
+	@IBOutlet weak var ratingCustom: UIView!
+	@IBOutlet weak var typeCustom: UIView!
+	@IBOutlet weak var distanceCustom: UILabel!
+
+
+}
+
 class DogBowlListTableViewController: UITableViewController {
+	
 	
 	// get the data from the model
 	var dogBowlList = Model.myModel.getDogBowls()
@@ -42,16 +53,16 @@ class DogBowlListTableViewController: UITableViewController {
 
 	
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "dogBowlCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dogBowlCell", for: indexPath) as! DogBowlListCell
 		
 		//create instance of the dogbowl
-		let dogBowl:DogBowl = dogBowlList[indexPath.item]
+		let dogBowl:DogBowl = dogBowlList[indexPath.row]
 		
       // Configure the cell...
 		
 		
-		cell.masterImage!.image = UIImage(named: dogBowl.photo)
-		//cell.detailTextLabel!.text = dogBowl.photo
+		cell.imageCustom!.image = UIImage(named: dogBowl.photo)
+		//cell.headingCustom!.text = dogBowl.establishment.description
 		
 		
         return cell
