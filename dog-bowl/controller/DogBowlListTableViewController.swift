@@ -63,8 +63,9 @@ class DogBowlListTableViewController: UITableViewController {
 		
 		cell.imageCustom!.image = UIImage(named: dogBowl.photo)
 		cell.headingCustom!.text = dogBowl.establishment.description
-		cell.ratingCustom!.image = UIImage(named: dogBowl.rating)
-		
+		//cell.ratingCustom! = UIImage(named: dogBowl.rating)
+		//cell.typeCustom! = UIImage(named: dogBowl.rating)
+		cell.distanceCustom!.text = "Distance: 100m" // need to create function for distance calculation.
 		
         return cell
     }

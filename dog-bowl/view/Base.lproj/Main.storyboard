@@ -32,7 +32,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNm-aM-rbh" userLabel="leftContainer">
                                             <rect key="frame" x="10" y="0.0" width="165" height="100"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="masterImage" image="alexandraParade" translatesAutoresizingMaskIntoConstraints="NO" id="Cqb-0v-YgT" userLabel="masterImage">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="masterImage" image="alexandraParade" translatesAutoresizingMaskIntoConstraints="NO" id="Cqb-0v-YgT" userLabel="masterImage">
                                                     <rect key="frame" x="5" y="5" width="155" height="90"/>
                                                 </imageView>
                                             </subviews>
@@ -53,12 +53,33 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-H3-ZsJ" userLabel="rating">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-H3-ZsJ" userLabel="rating" customClass="CosmosView" customModule="dog_bowl" customModuleProvider="target">
                                                     <rect key="frame" x="17" y="31" width="132" height="20"/>
-                                                    <color key="backgroundColor" red="0.99559515710000002" green="0.00044078574870000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="i0V-co-pxu"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="2.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="dog-bowl-full"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="dog-bowl-empty"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7p-Pg-8PU" userLabel="distance">
                                                     <rect key="frame" x="16.5" y="77" width="132" height="20"/>
@@ -261,5 +282,7 @@
     </scenes>
     <resources>
         <image name="alexandraParade" width="360" height="480"/>
+        <image name="dog-bowl-empty" width="1024" height="1024"/>
+        <image name="dog-bowl-full" width="1024" height="1024"/>
     </resources>
 </document>
