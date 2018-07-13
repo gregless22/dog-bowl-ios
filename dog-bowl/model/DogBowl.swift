@@ -56,13 +56,16 @@ struct DogBowl {
 			
 			//populate the builder with data
 			partialBowl.withPhoto(mockDatam[i].photos)
-			if mockDatam[i].placeID != "" {
-				partialBowl.withEstablishment(mockDatam[i].placeID)
-			}
-			else {
-				partialBowl.withEstablishment(mockDatam[i].locations, mockDatam[i].description, mockDatam[i].types)
-			}
 			
+			//THIS IS BLOCKED OUT UNTIL THE API IS IN PLACE>
+//			if mockDatam[i].placeID != "" {
+//				partialBowl.withEstablishment(mockDatam[i].placeID)
+//			}
+//			else {
+//				partialBowl.withEstablishment(mockDatam[i].locations, mockDatam[i].description, mockDatam[i].types)
+//			}
+			
+			partialBowl.withEstablishment(mockDatam[i].locations, mockDatam[i].description, mockDatam[i].types)
 			partialBowl.withRating(mockDatam[i].ratings)
 			partialBowl.withDescription(mockDatam[i].description)
 			

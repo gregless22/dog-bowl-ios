@@ -16,12 +16,15 @@
 		9BC3380320E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
 		9BC3380420E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
 		9BC3380520E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
-		F489D2C920F6DEA300D8B69C /* DogBowlListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* DogBowlListTableViewController.swift */; };
-		F489D2CA20F6DEA300D8B69C /* DogBowlListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* DogBowlListTableViewController.swift */; };
-		F489D2CB20F6DEA300D8B69C /* DogBowlListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* DogBowlListTableViewController.swift */; };
-		F489D2CD20F6FAA000D8B69C /* DogBowlDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DogBowlDetailViewController.swift */; };
-		F489D2CE20F6FAA000D8B69C /* DogBowlDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DogBowlDetailViewController.swift */; };
-		F489D2CF20F6FAA000D8B69C /* DogBowlDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DogBowlDetailViewController.swift */; };
+		F441D96520F87EB8008AF9EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D96420F87EB8008AF9EC /* MapController.swift */; };
+		F441D96620F87EB8008AF9EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D96420F87EB8008AF9EC /* MapController.swift */; };
+		F441D96720F87EB8008AF9EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D96420F87EB8008AF9EC /* MapController.swift */; };
+		F489D2C920F6DEA300D8B69C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* TableViewController.swift */; };
+		F489D2CA20F6DEA300D8B69C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* TableViewController.swift */; };
+		F489D2CB20F6DEA300D8B69C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* TableViewController.swift */; };
+		F489D2CD20F6FAA000D8B69C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */; };
+		F489D2CE20F6FAA000D8B69C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */; };
+		F489D2CF20F6FAA000D8B69C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */; };
 		F489D2D520F75F3300D8B69C /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2D420F75F3300D8B69C /* CosmosDistrib.swift */; };
 		F489D2D620F75F3300D8B69C /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2D420F75F3300D8B69C /* CosmosDistrib.swift */; };
 		F489D2D720F75F3300D8B69C /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2D420F75F3300D8B69C /* CosmosDistrib.swift */; };
@@ -56,8 +59,9 @@
 		9BC337FA20E48F860053C16A /* DogBowl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBowl.swift; sourceTree = "<group>"; };
 		9BC337FE20E48FA40053C16A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9BC3380220E48FC70053C16A /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
-		F489D2C820F6DEA300D8B69C /* DogBowlListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBowlListTableViewController.swift; sourceTree = "<group>"; };
-		F489D2CC20F6FAA000D8B69C /* DogBowlDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBowlDetailViewController.swift; sourceTree = "<group>"; };
+		F441D96420F87EB8008AF9EC /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		F489D2C820F6DEA300D8B69C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F489D2D420F75F3300D8B69C /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosDistrib.swift; path = ../../../../../../../Documents/Code/perl_learning/assignment1/Cosmos/Distrib/CosmosDistrib.swift; sourceTree = "<group>"; };
 		F4B1BC5F20D4A849009F80CE /* dog-bowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dog-bowl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B1BC6220D4A849009F80CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,8 +121,9 @@
 				F489D2D420F75F3300D8B69C /* CosmosDistrib.swift */,
 				F4B1BC6220D4A849009F80CE /* AppDelegate.swift */,
 				F4B1BC6420D4A849009F80CE /* ViewController.swift */,
-				F489D2C820F6DEA300D8B69C /* DogBowlListTableViewController.swift */,
-				F489D2CC20F6FAA000D8B69C /* DogBowlDetailViewController.swift */,
+				F489D2C820F6DEA300D8B69C /* TableViewController.swift */,
+				F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */,
+				F441D96420F87EB8008AF9EC /* MapController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -315,13 +320,14 @@
 			files = (
 				9BC337FF20E48FA40053C16A /* Model.swift in Sources */,
 				9BC337FB20E48F860053C16A /* DogBowl.swift in Sources */,
+				F441D96520F87EB8008AF9EC /* MapController.swift in Sources */,
 				F4B1BC6520D4A849009F80CE /* ViewController.swift in Sources */,
 				9BC3380320E48FC70053C16A /* Establishment.swift in Sources */,
-				F489D2CD20F6FAA000D8B69C /* DogBowlDetailViewController.swift in Sources */,
+				F489D2CD20F6FAA000D8B69C /* DetailViewController.swift in Sources */,
 				F489D2D520F75F3300D8B69C /* CosmosDistrib.swift in Sources */,
 				F4B1BC6320D4A849009F80CE /* AppDelegate.swift in Sources */,
 				F4B1BC6B20D4A849009F80CE /* dog_bowl.xcdatamodeld in Sources */,
-				F489D2C920F6DEA300D8B69C /* DogBowlListTableViewController.swift in Sources */,
+				F489D2C920F6DEA300D8B69C /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +337,11 @@
 			files = (
 				9BC3380020E48FA40053C16A /* Model.swift in Sources */,
 				9BC3380420E48FC70053C16A /* Establishment.swift in Sources */,
-				F489D2CE20F6FAA000D8B69C /* DogBowlDetailViewController.swift in Sources */,
+				F489D2CE20F6FAA000D8B69C /* DetailViewController.swift in Sources */,
 				F4B1BC7B20D4A84A009F80CE /* dog_bowlTests.swift in Sources */,
 				F489D2D620F75F3300D8B69C /* CosmosDistrib.swift in Sources */,
-				F489D2CA20F6DEA300D8B69C /* DogBowlListTableViewController.swift in Sources */,
+				F489D2CA20F6DEA300D8B69C /* TableViewController.swift in Sources */,
+				F441D96620F87EB8008AF9EC /* MapController.swift in Sources */,
 				9BC337FC20E48F860053C16A /* DogBowl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,10 +352,11 @@
 			files = (
 				9BC3380120E48FA40053C16A /* Model.swift in Sources */,
 				9BC3380520E48FC70053C16A /* Establishment.swift in Sources */,
-				F489D2CF20F6FAA000D8B69C /* DogBowlDetailViewController.swift in Sources */,
+				F489D2CF20F6FAA000D8B69C /* DetailViewController.swift in Sources */,
 				F4B1BC8620D4A84A009F80CE /* dog_bowlUITests.swift in Sources */,
 				F489D2D720F75F3300D8B69C /* CosmosDistrib.swift in Sources */,
-				F489D2CB20F6DEA300D8B69C /* DogBowlListTableViewController.swift in Sources */,
+				F489D2CB20F6DEA300D8B69C /* TableViewController.swift in Sources */,
+				F441D96720F87EB8008AF9EC /* MapController.swift in Sources */,
 				9BC337FD20E48F860053C16A /* DogBowl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
