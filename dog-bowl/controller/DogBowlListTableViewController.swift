@@ -118,8 +118,7 @@ class DogBowlListTableViewController: UITableViewController {
 		let detailViewController = segue.destination as! DogBowlDetailViewController
 		
 		detailViewController.dogBowlDetail = dogBowl
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
     }
 
 
