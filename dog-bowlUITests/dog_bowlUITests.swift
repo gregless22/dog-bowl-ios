@@ -28,9 +28,57 @@ class dog_bowlUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSearch() {
+		//get app reference
+		let app = XCUIApplication()
+		
+		//start the test
+
+		app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .searchField).element.tap()
+		//app.searchFields.containing(.button, identifier:"Clear text").element.tap()
+		//app.searchFields.buttons["Clear text"].tap()
+		
+	
     }
+	
+	func testTableView(){
+		//test label is there.
+		
+		let app = XCUIApplication()
+		app.tabBars.buttons["List View"].tap()
+		app.tables.cells.otherElements.containing(.image, identifier:"iga").element.tap()
+
+	}
+	
+	func testExistance(){
+		//app reference
+		let app = XCUIApplication()
+		
+		app.tabBars.buttons["List View"].tap()
+		app.tables/*@START_MENU_TOKEN@*/.staticTexts["IGA Maroochydore"]/*[[".cells.staticTexts[\"IGA Maroochydore\"]",".staticTexts[\"IGA Maroochydore\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+		
+		let scrollViewsQuery = app.scrollViews
+		let elementsQuery = scrollViewsQuery.otherElements
+		
+		// check elements exits
+		XCTAssertTrue(elementsQuery.staticTexts["IGA Maroochydore"].exists)
+		
+
+		elementsQuery.staticTexts["Other"].tap()
+		
+		let rateButton = elementsQuery.buttons["Rate"]
+
+		elementsQuery.buttons["Report"].tap()
+		elementsQuery.buttons["Update"].tap()
+		scrollViewsQuery.otherElements.containing(.image, identifier:"iga").element.swipeUp()
+		
+	}
+	
+	func testTesting(){
+		let app = XCUIApplication()
+		
+		let tested = app.staticTexts["detailTitle"]
+		XCTAssertEqual(tested.label, "Label")
+	}
     
 }
