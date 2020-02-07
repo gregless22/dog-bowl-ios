@@ -10,6 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
+<<<<<<< Updated upstream
 // establishment struct
 struct Establishment {
 	
@@ -72,6 +73,37 @@ struct Establishment {
 	
 	
 }
+=======
+
+
+ //enum creation for the establishment type
+public enum EstablishmentType:String {
+    case restaurant, cafe, park, other, unknown
+
+    var name: String {
+        get {
+            switch self {
+                case .restaurant: return "Restaurant"
+                case .cafe:return "Cafe"
+                case .park: return "Park"
+                case .other: return "Other"
+                case .unknown: return "Unknown"
+            }
+        }
+    }
+
+    var color: UIColor {
+        get {
+            switch self {
+                case .restaurant: return UIColor(red: 228/255, green: 205/255, blue: 254/255, alpha: 1)
+                case .cafe:return UIColor(red: 162/255, green: 216/255, blue: 218/255, alpha: 1)
+                case .park: return UIColor(red: 249/255, green: 187/255, blue: 157/255, alpha: 1)
+                case .other: return UIColor(red: 139/255, green: 215/255, blue: 253/255, alpha: 1)
+                case .unknown: return UIColor(red: 47/255, green: 45/255, blue: 46/255, alpha: 1)
+            }
+        }
+    }
+>>>>>>> Stashed changes
 
 // enum creation for the establishment type
 enum EstablishmentType:String {

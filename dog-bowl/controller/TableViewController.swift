@@ -62,6 +62,7 @@ class DogBowlListTableViewController: UITableViewController {
       // Configure the cell...
 		
 		
+<<<<<<< Updated upstream
 		cell.imageCustom!.image = UIImage(named: dogBowl.photo)
 		cell.headingCustom!.text = dogBowl.description
 		cell.cosmosCustom.rating = dogBowl.rating
@@ -69,47 +70,22 @@ class DogBowlListTableViewController: UITableViewController {
 		cell.typeCustom!.text = dogBowl.establishment.type.name
 		cell.typeCustom!.backgroundColor = dogBowl.establishment.type.color
 		cell.distanceCustom!.text = "Distance: 100m" // need to create function for distance calculation.
+=======
+        cell.imageCustom!.image = UIImage(data: dogBowl.imgData! as Data)
+        cell.headingCustom!.text = dogBowl.name
+//        cell.cosmosCustom.rating = dogBowl.rating
+//        cell.cosmosCustom.text = "\(dogBowl.rating)"
+       
+        cell.typeCustom!.text = dogBowl.establishment?.establishmentType
+        cell.typeCustom!.backgroundColor = establishment?.color
+
+>>>>>>> Stashed changes
 		
         return cell
     }
 	
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		
 		let indexPath = self.tableView.indexPathForSelectedRow!

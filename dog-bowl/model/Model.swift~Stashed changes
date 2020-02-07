@@ -10,35 +10,11 @@
 
 import Foundation
 import CoreLocation
+import CoreData
+import UIKit
 
 
 class Model {
-<<<<<<< Updated upstream
-	
-	//singleton for creation of one instance of MyModel
-	static let myModel = Model()
-	
-	//container to hold the dog bowls.
-	var myDogBowls:[DogBowl]
-	
-	private init(){
-		
-		//create users position.  This is more mock data and probably needs to be moved to the map controller.
-		let userLocation = CLLocationCoordinate2D(latitude: -26.657669, longitude: 153.102056)
-		
-		//populate the dog bowls array
-		myDogBowls = DogBowl.getBowls(3, userLocation, "no filter")
-		
-		
-	}
-	
-	func getDogBowls() -> [DogBowl] {
-		return myDogBowls
-	}
-	
-	
-	
-=======
     
     // dispatch queues this has yet been implemented.  Will need to do so.
 //    let convertQueue = DispatchQueue.self
@@ -69,12 +45,46 @@ class Model {
     }
 
 
->>>>>>> Stashed changes
 }
 
+extension Model:ImgDelegate {
 
-<<<<<<< Updated upstream
-=======
+    func updateDatabase() {
+        
+        do {
+            try managedContext.save()
+        }
+            
+        catch let error as NSError {
+            
+            print("Could not save \(error), \(error.userInfo)")
+            
+        }
+    }
+    
+    //this will delete a specific dog bowl in the data.
+    func deleteDogBowl(_ indexPath: IndexPath) {
+        let dogBowl = myDogBowls[indexPath.item]
+        myDogBowls.remove(at: indexPath.item)
+        managedContext.delete(dogBowl)
+        updateDatabase()
+    }
+    
+    // This returns all of the dog bowls that are stored in core data.
+    func getDogBowls() {
+        do {
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DogBowl")
+            let results = try managedContext.fetch(fetchRequest)
+            myDogBowls = results as! [DogBowl]
+        }
+        catch let error as NSError {
+            
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+       
+    }
+
+
     func saveDogBowls(name: String, establishmentType: EstablishmentType, longitude: Double, latitude: Double, vicinity: String, image: UIImage) {
         
         var imageSave:NSData?
@@ -108,7 +118,6 @@ class Model {
     }
     
 }
->>>>>>> Stashed changes
 
 
 

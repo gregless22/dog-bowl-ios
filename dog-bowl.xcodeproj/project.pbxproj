@@ -7,21 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
 		9BC337FB20E48F860053C16A /* DogBowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FA20E48F860053C16A /* DogBowl.swift */; };
 		9BC337FC20E48F860053C16A /* DogBowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FA20E48F860053C16A /* DogBowl.swift */; };
 		9BC337FD20E48F860053C16A /* DogBowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FA20E48F860053C16A /* DogBowl.swift */; };
+=======
+		2BC663278B678E4B29605F98 /* Pods_dog_bowlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B1ACFECF091865A2BE84E1 /* Pods_dog_bowlTests.framework */; };
+		36F4D92D8CF9A76BCD6AB31B /* Pods_dog_bowl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AB961648E8C4DBE32C96D4 /* Pods_dog_bowl.framework */; };
+>>>>>>> Stashed changes
 		9BC337FF20E48FA40053C16A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FE20E48FA40053C16A /* Model.swift */; };
 		9BC3380020E48FA40053C16A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FE20E48FA40053C16A /* Model.swift */; };
 		9BC3380120E48FA40053C16A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC337FE20E48FA40053C16A /* Model.swift */; };
 		9BC3380320E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
 		9BC3380420E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
 		9BC3380520E48FC70053C16A /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3380220E48FC70053C16A /* Establishment.swift */; };
+<<<<<<< Updated upstream
 		F441D96520F87EB8008AF9EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D96420F87EB8008AF9EC /* MapController.swift */; };
 		F441D96620F87EB8008AF9EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D96420F87EB8008AF9EC /* MapController.swift */; };
 		F441D96720F87EB8008AF9EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D96420F87EB8008AF9EC /* MapController.swift */; };
 		F489D2C920F6DEA300D8B69C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* TableViewController.swift */; };
 		F489D2CA20F6DEA300D8B69C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* TableViewController.swift */; };
 		F489D2CB20F6DEA300D8B69C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2C820F6DEA300D8B69C /* TableViewController.swift */; };
+=======
+		9BF858CB20FE02CC00AF77B4 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C320FE02CB00AF77B4 /* EditViewController.swift */; };
+		9BF858CC20FE02CC00AF77B4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C420FE02CB00AF77B4 /* MapViewController.swift */; };
+		9BF858CD20FE02CC00AF77B4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C520FE02CB00AF77B4 /* ReportViewController.swift */; };
+		9BF858CF20FE02CC00AF77B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C720FE02CB00AF77B4 /* AppDelegate.swift */; };
+		9BF858D020FE02CC00AF77B4 /* PopoverRatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C820FE02CC00AF77B4 /* PopoverRatingController.swift */; };
+		9BF858D120FE02CC00AF77B4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C920FE02CC00AF77B4 /* TableViewController.swift */; };
+		D055D5B2B04D3A1A4663BA40 /* Pods_dog_bowlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8B23336529B12BD4E44BC1 /* Pods_dog_bowlUITests.framework */; };
+		F435D09A2127AB9400C8F3B5 /* AddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435D0992127AB9400C8F3B5 /* AddEditView.swift */; };
+		F435D09B2127AB9400C8F3B5 /* AddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435D0992127AB9400C8F3B5 /* AddEditView.swift */; };
+		F435D09C2127AB9400C8F3B5 /* AddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435D0992127AB9400C8F3B5 /* AddEditView.swift */; };
+		F43F5EC22120F3D900C22B9E /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F5EC12120F3D900C22B9E /* LocationSearchViewController.swift */; };
+		F43F5EC32120F3D900C22B9E /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F5EC12120F3D900C22B9E /* LocationSearchViewController.swift */; };
+		F43F5EC42120F3D900C22B9E /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F5EC12120F3D900C22B9E /* LocationSearchViewController.swift */; };
+		F43F5EC621210F8B00C22B9E /* GooglePlacesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F5EC521210F8B00C22B9E /* GooglePlacesRequest.swift */; };
+		F43F5EC721210F8B00C22B9E /* GooglePlacesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F5EC521210F8B00C22B9E /* GooglePlacesRequest.swift */; };
+		F43F5EC821210F8B00C22B9E /* GooglePlacesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F5EC521210F8B00C22B9E /* GooglePlacesRequest.swift */; };
+		F441D98D20FB7463008AF9EC /* ErrorRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D98C20FB7463008AF9EC /* ErrorRecording.swift */; };
+		F441D98E20FB7463008AF9EC /* ErrorRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D98C20FB7463008AF9EC /* ErrorRecording.swift */; };
+		F441D98F20FB7463008AF9EC /* ErrorRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441D98C20FB7463008AF9EC /* ErrorRecording.swift */; };
+		F46D62B1212904AC0071B97F /* dog_bowl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4B1BC6920D4A849009F80CE /* dog_bowl.xcdatamodeld */; };
+		F46D62B2212904AC0071B97F /* dog_bowl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4B1BC6920D4A849009F80CE /* dog_bowl.xcdatamodeld */; };
+		F46D635621290C790071B97F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F46D635521290C780071B97F /* Default-568h@2x.png */; };
+>>>>>>> Stashed changes
 		F489D2CD20F6FAA000D8B69C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */; };
 		F489D2CE20F6FAA000D8B69C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */; };
 		F489D2CF20F6FAA000D8B69C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */; };
@@ -36,6 +66,53 @@
 		F4B1BC7020D4A84A009F80CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B1BC6E20D4A84A009F80CE /* LaunchScreen.storyboard */; };
 		F4B1BC7B20D4A84A009F80CE /* dog_bowlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1BC7A20D4A84A009F80CE /* dog_bowlTests.swift */; };
 		F4B1BC8620D4A84A009F80CE /* dog_bowlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1BC8520D4A84A009F80CE /* dog_bowlUITests.swift */; };
+<<<<<<< Updated upstream
+=======
+		F4B4C4492127C11F00086062 /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C4482127C11F00086062 /* FormController.swift */; };
+		F4B4C44A2127C11F00086062 /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C4482127C11F00086062 /* FormController.swift */; };
+		F4B4C44B2127C11F00086062 /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C4482127C11F00086062 /* FormController.swift */; };
+		F4B4C44D2127E7C900086062 /* NearbyBusinessTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C44C2127E7C900086062 /* NearbyBusinessTable.swift */; };
+		F4B4C44E2127E7C900086062 /* NearbyBusinessTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C44C2127E7C900086062 /* NearbyBusinessTable.swift */; };
+		F4B4C44F2127E7C900086062 /* NearbyBusinessTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C44C2127E7C900086062 /* NearbyBusinessTable.swift */; };
+		F4B4C45B2128F8AB00086062 /* ImgDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45A2128F8AB00086062 /* ImgDelegate.swift */; };
+		F4B4C45C2128F8AB00086062 /* ImgDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45A2128F8AB00086062 /* ImgDelegate.swift */; };
+		F4B4C45D2128F8AB00086062 /* ImgDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45A2128F8AB00086062 /* ImgDelegate.swift */; };
+		F4B4C466212901E800086062 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45E212901E800086062 /* User+CoreDataClass.swift */; };
+		F4B4C467212901E800086062 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45E212901E800086062 /* User+CoreDataClass.swift */; };
+		F4B4C468212901E800086062 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45E212901E800086062 /* User+CoreDataClass.swift */; };
+		F4B4C469212901E800086062 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45F212901E800086062 /* User+CoreDataProperties.swift */; };
+		F4B4C46A212901E800086062 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45F212901E800086062 /* User+CoreDataProperties.swift */; };
+		F4B4C46B212901E800086062 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C45F212901E800086062 /* User+CoreDataProperties.swift */; };
+		F4B4C46C212901E800086062 /* Establishment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C460212901E800086062 /* Establishment+CoreDataClass.swift */; };
+		F4B4C46D212901E800086062 /* Establishment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C460212901E800086062 /* Establishment+CoreDataClass.swift */; };
+		F4B4C46E212901E800086062 /* Establishment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C460212901E800086062 /* Establishment+CoreDataClass.swift */; };
+		F4B4C46F212901E800086062 /* Establishment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C461212901E800086062 /* Establishment+CoreDataProperties.swift */; };
+		F4B4C470212901E800086062 /* Establishment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C461212901E800086062 /* Establishment+CoreDataProperties.swift */; };
+		F4B4C471212901E800086062 /* Establishment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C461212901E800086062 /* Establishment+CoreDataProperties.swift */; };
+		F4B4C472212901E800086062 /* DogBowl+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C462212901E800086062 /* DogBowl+CoreDataClass.swift */; };
+		F4B4C473212901E800086062 /* DogBowl+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C462212901E800086062 /* DogBowl+CoreDataClass.swift */; };
+		F4B4C474212901E800086062 /* DogBowl+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C462212901E800086062 /* DogBowl+CoreDataClass.swift */; };
+		F4B4C475212901E800086062 /* DogBowl+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C463212901E800086062 /* DogBowl+CoreDataProperties.swift */; };
+		F4B4C476212901E800086062 /* DogBowl+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C463212901E800086062 /* DogBowl+CoreDataProperties.swift */; };
+		F4B4C477212901E800086062 /* DogBowl+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C463212901E800086062 /* DogBowl+CoreDataProperties.swift */; };
+		F4B4C478212901E800086062 /* Rating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C464212901E800086062 /* Rating+CoreDataClass.swift */; };
+		F4B4C479212901E800086062 /* Rating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C464212901E800086062 /* Rating+CoreDataClass.swift */; };
+		F4B4C47A212901E800086062 /* Rating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C464212901E800086062 /* Rating+CoreDataClass.swift */; };
+		F4B4C47B212901E800086062 /* Rating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C465212901E800086062 /* Rating+CoreDataProperties.swift */; };
+		F4B4C47C212901E800086062 /* Rating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C465212901E800086062 /* Rating+CoreDataProperties.swift */; };
+		F4B4C47D212901E800086062 /* Rating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C465212901E800086062 /* Rating+CoreDataProperties.swift */; };
+		F4FABA56211C32080071758F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C720FE02CB00AF77B4 /* AppDelegate.swift */; };
+		F4FABA57211C32090071758F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C720FE02CB00AF77B4 /* AppDelegate.swift */; };
+		F4FABA5A211C32160071758F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C320FE02CB00AF77B4 /* EditViewController.swift */; };
+		F4FABA5B211C32160071758F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C320FE02CB00AF77B4 /* EditViewController.swift */; };
+		F4FABA5C211C32190071758F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C420FE02CB00AF77B4 /* MapViewController.swift */; };
+		F4FABA5D211C32190071758F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C420FE02CB00AF77B4 /* MapViewController.swift */; };
+		F4FABA5E211C321F0071758F /* PopoverRatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C820FE02CC00AF77B4 /* PopoverRatingController.swift */; };
+		F4FABA5F211C321F0071758F /* PopoverRatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF858C820FE02CC00AF77B4 /* PopoverRatingController.swift */; };
+		F4FABA61211C32CF0071758F /* MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FABA60211C32CF0071758F /* MapDelegate.swift */; };
+		F4FABA62211C32CF0071758F /* MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FABA60211C32CF0071758F /* MapDelegate.swift */; };
+		F4FABA63211C32CF0071758F /* MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FABA60211C32CF0071758F /* MapDelegate.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +133,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< Updated upstream
 		9BC337FA20E48F860053C16A /* DogBowl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBowl.swift; sourceTree = "<group>"; };
 		9BC337FE20E48FA40053C16A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9BC3380220E48FC70053C16A /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
 		F441D96420F87EB8008AF9EC /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		F489D2C820F6DEA300D8B69C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+=======
+		0C01290B83F4B22F1C5B3E6A /* Pods-dog-bowl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dog-bowl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dog-bowl/Pods-dog-bowl.debug.xcconfig"; sourceTree = "<group>"; };
+		23B55C51D5319BB1DCD12121 /* Pods-dog-bowlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dog-bowlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dog-bowlTests/Pods-dog-bowlTests.release.xcconfig"; sourceTree = "<group>"; };
+		4BB76DAA71456A9A3824FF68 /* Pods-dog-bowl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dog-bowl.release.xcconfig"; path = "Pods/Target Support Files/Pods-dog-bowl/Pods-dog-bowl.release.xcconfig"; sourceTree = "<group>"; };
+		87B1ACFECF091865A2BE84E1 /* Pods_dog_bowlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dog_bowlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC337FE20E48FA40053C16A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9BC3380220E48FC70053C16A /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
+		9BF858C320FE02CB00AF77B4 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		9BF858C420FE02CB00AF77B4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9BF858C520FE02CB00AF77B4 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		9BF858C720FE02CB00AF77B4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BF858C820FE02CC00AF77B4 /* PopoverRatingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverRatingController.swift; sourceTree = "<group>"; };
+		9BF858C920FE02CC00AF77B4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AB8B23336529B12BD4E44BC1 /* Pods_dog_bowlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dog_bowlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7882FFCE824DAA6F8BD11B4 /* Pods-dog-bowlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dog-bowlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dog-bowlTests/Pods-dog-bowlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFE49AE24554AC255396F902 /* Pods-dog-bowlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dog-bowlUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dog-bowlUITests/Pods-dog-bowlUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7AB961648E8C4DBE32C96D4 /* Pods_dog_bowl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dog_bowl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A58FC7CAAFBC7263012C98 /* Pods-dog-bowlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dog-bowlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dog-bowlUITests/Pods-dog-bowlUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F435D0992127AB9400C8F3B5 /* AddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditView.swift; sourceTree = "<group>"; };
+		F43F5EC12120F3D900C22B9E /* LocationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
+		F43F5EC521210F8B00C22B9E /* GooglePlacesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesRequest.swift; sourceTree = "<group>"; };
+		F441D98C20FB7463008AF9EC /* ErrorRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRecording.swift; sourceTree = "<group>"; };
+		F46D635521290C780071B97F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F489D2D420F75F3300D8B69C /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosDistrib.swift; path = ../../../../../../../Documents/Code/perl_learning/assignment1/Cosmos/Distrib/CosmosDistrib.swift; sourceTree = "<group>"; };
 		F4B1BC5F20D4A849009F80CE /* dog-bowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dog-bowl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				F4B1BC6C20D4A84A009F80CE /* Assets.xcassets */,
-				9BC337FA20E48F860053C16A /* DogBowl.swift */,
 				9BC337FE20E48FA40053C16A /* Model.swift */,
 				9BC3380220E48FC70053C16A /* Establishment.swift */,
 			);
@@ -118,10 +219,19 @@
 		F40C5A9B20E3142800C86EE9 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				F489D2D420F75F3300D8B69C /* CosmosDistrib.swift */,
 				F4B1BC6220D4A849009F80CE /* AppDelegate.swift */,
 				F4B1BC6420D4A849009F80CE /* ViewController.swift */,
 				F489D2C820F6DEA300D8B69C /* TableViewController.swift */,
+=======
+				F43F5EC12120F3D900C22B9E /* LocationSearchViewController.swift */,
+				9BF858C320FE02CB00AF77B4 /* EditViewController.swift */,
+				9BF858C420FE02CB00AF77B4 /* MapViewController.swift */,
+				9BF858C820FE02CC00AF77B4 /* PopoverRatingController.swift */,
+				9BF858C520FE02CB00AF77B4 /* ReportViewController.swift */,
+				9BF858C920FE02CC00AF77B4 /* TableViewController.swift */,
+>>>>>>> Stashed changes
 				F489D2CC20F6FAA000D8B69C /* DetailViewController.swift */,
 				F441D96420F87EB8008AF9EC /* MapController.swift */,
 			);
@@ -137,6 +247,20 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
+=======
+		F42E9495211A926A00C75CE4 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				9BF858C720FE02CB00AF77B4 /* AppDelegate.swift */,
+				F4FABA60211C32CF0071758F /* MapDelegate.swift */,
+				F43F5EC521210F8B00C22B9E /* GooglePlacesRequest.swift */,
+				F4B4C45A2128F8AB00086062 /* ImgDelegate.swift */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+>>>>>>> Stashed changes
 		F4B1BC5620D4A849009F80CE = {
 			isa = PBXGroup;
 			children = (
@@ -319,10 +443,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC337FF20E48FA40053C16A /* Model.swift in Sources */,
+<<<<<<< Updated upstream
 				9BC337FB20E48F860053C16A /* DogBowl.swift in Sources */,
 				F441D96520F87EB8008AF9EC /* MapController.swift in Sources */,
 				F4B1BC6520D4A849009F80CE /* ViewController.swift in Sources */,
 				9BC3380320E48FC70053C16A /* Establishment.swift in Sources */,
+=======
+				F43F5EC621210F8B00C22B9E /* GooglePlacesRequest.swift in Sources */,
+				F435D09A2127AB9400C8F3B5 /* AddEditView.swift in Sources */,
+				9BC3380320E48FC70053C16A /* Establishment.swift in Sources */,
+				F4B4C472212901E800086062 /* DogBowl+CoreDataClass.swift in Sources */,
+>>>>>>> Stashed changes
 				F489D2CD20F6FAA000D8B69C /* DetailViewController.swift in Sources */,
 				F489D2D520F75F3300D8B69C /* CosmosDistrib.swift in Sources */,
 				F4B1BC6320D4A849009F80CE /* AppDelegate.swift in Sources */,
@@ -335,14 +466,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
+=======
+				F4B4C479212901E800086062 /* Rating+CoreDataClass.swift in Sources */,
+>>>>>>> Stashed changes
 				9BC3380020E48FA40053C16A /* Model.swift in Sources */,
 				9BC3380420E48FC70053C16A /* Establishment.swift in Sources */,
 				F489D2CE20F6FAA000D8B69C /* DetailViewController.swift in Sources */,
 				F4B1BC7B20D4A84A009F80CE /* dog_bowlTests.swift in Sources */,
+<<<<<<< Updated upstream
 				F489D2D620F75F3300D8B69C /* CosmosDistrib.swift in Sources */,
 				F489D2CA20F6DEA300D8B69C /* TableViewController.swift in Sources */,
 				F441D96620F87EB8008AF9EC /* MapController.swift in Sources */,
 				9BC337FC20E48F860053C16A /* DogBowl.swift in Sources */,
+=======
+				F435D09B2127AB9400C8F3B5 /* AddEditView.swift in Sources */,
+				F43F5EC721210F8B00C22B9E /* GooglePlacesRequest.swift in Sources */,
+				F46D62B1212904AC0071B97F /* dog_bowl.xcdatamodeld in Sources */,
+				F4FABA62211C32CF0071758F /* MapDelegate.swift in Sources */,
+				F441D98E20FB7463008AF9EC /* ErrorRecording.swift in Sources */,
+				F4B4C467212901E800086062 /* User+CoreDataClass.swift in Sources */,
+				F4B4C473212901E800086062 /* DogBowl+CoreDataClass.swift in Sources */,
+				F4FABA5C211C32190071758F /* MapViewController.swift in Sources */,
+				F4B4C44E2127E7C900086062 /* NearbyBusinessTable.swift in Sources */,
+				F4B4C46D212901E800086062 /* Establishment+CoreDataClass.swift in Sources */,
+				F4B4C476212901E800086062 /* DogBowl+CoreDataProperties.swift in Sources */,
+				F4B4C46A212901E800086062 /* User+CoreDataProperties.swift in Sources */,
+				F43F5EC32120F3D900C22B9E /* LocationSearchViewController.swift in Sources */,
+				F4B4C45C2128F8AB00086062 /* ImgDelegate.swift in Sources */,
+				F4B4C47C212901E800086062 /* Rating+CoreDataProperties.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,14 +503,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
+=======
+				F4B4C47A212901E800086062 /* Rating+CoreDataClass.swift in Sources */,
+>>>>>>> Stashed changes
 				9BC3380120E48FA40053C16A /* Model.swift in Sources */,
 				9BC3380520E48FC70053C16A /* Establishment.swift in Sources */,
 				F489D2CF20F6FAA000D8B69C /* DetailViewController.swift in Sources */,
 				F4B1BC8620D4A84A009F80CE /* dog_bowlUITests.swift in Sources */,
+<<<<<<< Updated upstream
 				F489D2D720F75F3300D8B69C /* CosmosDistrib.swift in Sources */,
 				F489D2CB20F6DEA300D8B69C /* TableViewController.swift in Sources */,
 				F441D96720F87EB8008AF9EC /* MapController.swift in Sources */,
 				9BC337FD20E48F860053C16A /* DogBowl.swift in Sources */,
+=======
+				F435D09C2127AB9400C8F3B5 /* AddEditView.swift in Sources */,
+				F43F5EC821210F8B00C22B9E /* GooglePlacesRequest.swift in Sources */,
+				F46D62B2212904AC0071B97F /* dog_bowl.xcdatamodeld in Sources */,
+				F4FABA63211C32CF0071758F /* MapDelegate.swift in Sources */,
+				F441D98F20FB7463008AF9EC /* ErrorRecording.swift in Sources */,
+				F4B4C468212901E800086062 /* User+CoreDataClass.swift in Sources */,
+				F4B4C474212901E800086062 /* DogBowl+CoreDataClass.swift in Sources */,
+				F4FABA5D211C32190071758F /* MapViewController.swift in Sources */,
+				F4B4C44F2127E7C900086062 /* NearbyBusinessTable.swift in Sources */,
+				F4B4C46E212901E800086062 /* Establishment+CoreDataClass.swift in Sources */,
+				F4B4C477212901E800086062 /* DogBowl+CoreDataProperties.swift in Sources */,
+				F4B4C46B212901E800086062 /* User+CoreDataProperties.swift in Sources */,
+				F43F5EC42120F3D900C22B9E /* LocationSearchViewController.swift in Sources */,
+				F4B4C45D2128F8AB00086062 /* ImgDelegate.swift in Sources */,
+				F4B4C47D212901E800086062 /* Rating+CoreDataProperties.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
